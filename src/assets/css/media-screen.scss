@@ -1,0 +1,40 @@
+@media screen and (max-width: 900px){
+  #app {
+    .home {
+      .header-wrap {
+        justify-content: space-between;
+        .header-menu {
+          display: none;
+        }
+      }
+      .body-wrap {
+        .panel-container {
+          flex-direction: column;
+          height: 100px;
+          .panel-left {
+            width: 100%;
+          }
+          .panel-right {
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+            padding-bottom: 10px;
+            .panel-right-search {
+              display: none;
+            }
+          }
+        }
+        .body-container {
+          max-height: calc(100% - 132px);
+          flex-direction: column;
+          .body-container-left {
+            width: 100%;
+          }
+          .body-container-right {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
