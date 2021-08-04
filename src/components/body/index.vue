@@ -3,7 +3,7 @@
     <panel-block />
     <div class="body-container">
       <div class="body-container-left">
-        list
+        <list-block />
       </div>
       <div class="body-container-right">
         <tips />
@@ -17,6 +17,7 @@
 </template>
 <script>
 import PanelBlock from './panel.vue'
+import ListBlock from './coms/list.vue'
 import HotList from './coms/HotList.vue'
 import Tips from './coms/Tips.vue'
 import Sign from './coms/Sign.vue'
@@ -30,7 +31,8 @@ export default {
     Tips,
     Sign,
     Links,
-    Ads
+    Ads,
+    ListBlock
   },
   props: {},
   data() {
@@ -44,7 +46,7 @@ export default {
 .body-wrap {
   width: 100%;
   height: calc(100% - 50px);
-  overflow: hidden;
+  // overflow: hidden;
   .body-container {
     width: 100%;
     padding: 0 16px;
@@ -54,6 +56,7 @@ export default {
     .body-container-left {
       width: calc(100% - 400px);
       height: 100%;
+      margin-right: 16px;
     }
     .body-container-right {
       width: 400px;
